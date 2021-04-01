@@ -8,9 +8,7 @@ font-family: 'Didact Gothic', sans-serif;
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Work Sans', sans-serif;
 
-*/
 
-/* 
 
 Farben:
 
@@ -46,14 +44,32 @@ h4::before {
     content: " - ";
 }
 
-main article:nth-of-type(odd) {
+main article:nth-of-type(odd),
+main article:nth-of-type(odd) section a  {
     color: #fff;
+}
+
+main article:nth-of-type(even) section a {
+    color: #000;
 }
 
 main article {
     height: 108vh;
 }
 
+article h4, article p {
+    color: #9e9e9e;
+}
+
+a {
+    text-decoration: none;
+    border: 2px solid;
+    padding: 1vh 1vw;
+}
+
+main section {
+    padding: 1vh 1vw;
+}
 
 /*** header ***/
 
@@ -79,6 +95,8 @@ header section:nth-of-type(2) {
 h1 {
     font-size: 10em;
 }
+
+
 
 /*** main ***/
 
