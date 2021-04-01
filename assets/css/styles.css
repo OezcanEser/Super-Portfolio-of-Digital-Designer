@@ -48,7 +48,7 @@ h4 {
     font-family: 'Work Sans', sans-serif;
 }
 
-section:nth-of-type(2) p, a {
+article p:nth-of-type(2), a {
     font-family: 'Fjalla One', sans-serif;
 }
 
@@ -95,7 +95,7 @@ main article:nth-of-type(4) {
 }
 
 main article {
-    height: 100vh;
+    height: 110vh;
 }
 
 main article:nth-of-type(odd),
@@ -107,38 +107,60 @@ main article:nth-of-type(even) section a {
     color: #000;
 }
 
-h3 {
-    font-size: 8em;
-    margin: 5vh auto;
+main article h4, main p:first-of-type {
+    font-size: 1.5em;
+    color: #999;
 }
 
-main section:nth-of-type(1) {
-    padding: 10vh 15vw 10vh;
+h3 {
+    font-size: 9em;
+    margin: 0.5vh auto 5vh;
+}
+
+main section {
+    padding: 15vh 15vw;
 }
 
 main a {
+    margin: 5vh auto;
     text-decoration: none;
     border: 2px solid;
     padding: 1.5vh 1.5vw;
 }
 
-main section:nth-of-type(2) {
-    padding: 5vh 15vw;
+main article p:nth-of-type(2) {
+    font-size: 2em;
 }
 
-main section:nth-of-type(2) p {
-    text-align: right;
-    margin: 4vh -6vw;
-    font-size: 10em;
-    opacity: 0.5;
+main p:nth-of-type(1) {
+    margin: 0 0 15vh ;
 }
 
+main article:nth-of-type(1) a + ::after {
+    content: "01";
+}
 
+main article:nth-of-type(2) a + ::after {
+    content: "02";
+}
 
+main article:nth-of-type(3) a + ::after {
+    content: "03";
+}
 
+main article:nth-of-type(4) a + ::after {
+    content: "04";
+}
 
+main article:nth-of-type(odd) a:hover {
+    background: #fff;
+    border: 2px #fff solid;
+    color: #000;
+}
 
-
+main article:nth-of-type(odd) a:hover + ::after {
+    opacity: 0;
+}
 
 
 
