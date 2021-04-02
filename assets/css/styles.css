@@ -40,15 +40,19 @@ h4::before {
 h1,
 h2,
 h3,
-p  {
+p {
     font-family: 'Didact Gothic', sans-serif;
 }
 
-h4 {
+h4,
+main article:last-child p,
+main article:last-child a {
     font-family: 'Work Sans', sans-serif;
 }
 
-article p:nth-of-type(2), a {
+article p:nth-of-type(2),
+a
+ {
     font-family: 'Fjalla One', sans-serif;
 }
 
@@ -184,6 +188,21 @@ main article:last-of-type h3 {
     text-transform: none;
 }
 
+/*** What mone? ***/
+
+main article:last-child p,
+main article:last-child a {
+    margin: 15vh 0vw 20vh 30vw ;
+}
+
+main article:last-child p {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
 main article:last-child a {
     text-transform: none;
+    border: none;
+    font-size: 5em;
+    padding: 0;
 }
