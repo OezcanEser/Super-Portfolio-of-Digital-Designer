@@ -128,10 +128,6 @@ main a {
     padding: 1.5vh 1.5vw;
 }
 
-main article p:nth-of-type(2) {
-    font-size: 2em;
-}
-
 main p:nth-of-type(1) {
     margin: 0 0 15vh ;
 }
@@ -152,15 +148,33 @@ main article:nth-of-type(4) a + ::after {
     content: "04";
 }
 
+main a + ::after {
+    opacity: .5;
+}
+
+main article section p:last-child {
+    text-align: right;
+    font-size: 10em;
+    margin: 0 -6vw ;
+}
+
 main article:nth-of-type(odd) a:hover {
     background: #fff;
     border: 2px #fff solid;
     color: #000;
 }
 
-main article:nth-of-type(odd) a:hover + ::after {
-    opacity: 0;
+main article:nth-of-type(even) a:hover {
+    background: #000;
+    border: 2px #000 solid;
+    color: #fff;
 }
+
+main a:hover + ::after {
+    opacity: 1;
+}
+
+
 
 
 
