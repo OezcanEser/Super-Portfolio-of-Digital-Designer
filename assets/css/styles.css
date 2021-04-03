@@ -62,12 +62,16 @@ header {
     text-align: center;
 }
 
+header p {
+    font-size: 1.2em;
+}
+
 header section:nth-of-type(1) {
     padding: 0 33vw;   
 }
 
 h2 {
-    font-size: 5em;
+    font-size: 6em;
 }
 
 header section:nth-of-type(2) {
@@ -179,6 +183,8 @@ main a:hover + ::after {
     opacity: 1;
 }
 
+/*** What mone? ***/
+
 main article:last-of-type {
     background: #000;
 }
@@ -186,13 +192,12 @@ main article:last-of-type {
 main article:last-of-type h3 {
     text-align: center;
     text-transform: none;
+    font-size: 12em;
 }
-
-/*** What mone? ***/
 
 main article:last-child p,
 main article:last-child a {
-    margin: 15vh 0vw 20vh 30vw ;
+    margin: 10vh 0vw 10vh 30vw ;
 }
 
 main article:last-child p {
@@ -203,6 +208,22 @@ main article:last-child p {
 main article:last-child a {
     text-transform: none;
     border: none;
-    font-size: 5em;
+    font-size: 4em;
     padding: 0;
+}
+
+main article:last-child a:hover {
+    background: transparent;
+    text-decoration: underline;
+    color: #fff;
+    border: none;
+}
+
+/*** footer ***/
+
+footer {
+    text-align: center;
+    color: #000;
+    background: transparent;
+    border: none;
 }
