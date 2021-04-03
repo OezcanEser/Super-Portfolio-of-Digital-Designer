@@ -34,7 +34,7 @@ section:nth-of-type(2) a {
 }
 
 h4::before {
-    content: " - ";
+    content: " – ";
 }
 
 h1,
