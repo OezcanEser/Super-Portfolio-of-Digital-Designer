@@ -1,23 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fjalla+One&family=Work+Sans&display=swap');
 
-/* 
-
-Fonts:
-
-font-family: 'Didact Gothic', sans-serif;
-font-family: 'Fjalla One', sans-serif;
-font-family: 'Work Sans', sans-serif;
-
-Farben:
-
-#9e9e9e
-#fff
-#000
-#333
-#666
-
-*/
-
 /*** default ***/
 
 body {
@@ -52,8 +34,7 @@ main article:last-child a {
     font-family: 'Work Sans', sans-serif;
 }
 
-article p:nth-of-type(2),
-a
+article p:nth-of-type(2), a
  {
     font-family: 'Fjalla One', sans-serif;
 }
@@ -68,18 +49,15 @@ header p {
     font-size: 1.2em;
 }
 
-header section:nth-of-type(1) {
-    padding: 0 33vw;   
-}
-
 h2 {
     font-size: 6em;
 }
 
-header section:nth-of-type(2) {
+header section div {
     background: url(../img/portfolio1.jpeg) center / cover no-repeat;
-    height: 60vw;
-    margin: 0 30vw;
+    height: 75vw;
+    width: 50%;
+    display: inline-block;
 }
 
 h1 {
@@ -105,7 +83,7 @@ main article:nth-of-type(4) {
 }
 
 main article {
-    height: 110vh;
+    height: 80vh;
 }
 
 main article:nth-of-type(odd),
@@ -117,7 +95,8 @@ main article:nth-of-type(even) section a {
     color: #000;
 }
 
-main article h4, main p:first-of-type {
+main article h4,
+main p:first-of-type {
     font-size: 1.5em;
     color: #999;
 }
@@ -127,7 +106,7 @@ h3 {
     margin: 0.5vh auto 5vh;
 }
 
-main section {
+main article {
     padding: 15vh 15vw;
 }
 
@@ -187,11 +166,12 @@ main a:hover + ::after {
 
 /*** What mone? ***/
 
-main article:last-of-type {
+main article:last-child {
     background: #000;
+    padding: 10vh;
 }
 
-main article:last-of-type h3 {
+main article:last-child h3 {
     text-align: center;
     text-transform: none;
     font-size: 12em;
@@ -199,7 +179,7 @@ main article:last-of-type h3 {
 
 main article:last-child p,
 main article:last-child a {
-    margin: 10vh 0vw 10vh 28vw ;
+    margin: 15vh 0vw 5vh 40vw ;
 }
 
 main article:last-child p {
