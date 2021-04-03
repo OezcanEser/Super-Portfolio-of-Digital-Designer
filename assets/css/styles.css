@@ -40,7 +40,8 @@ h4::before {
 h1,
 h2,
 h3,
-p {
+p,
+footer a {
     font-family: 'Didact Gothic', sans-serif;
 }
 
@@ -223,7 +224,32 @@ main article:last-child a:hover {
 
 footer {
     text-align: center;
-    color: #000;
     background: transparent;
     border: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-size: 10em;
+    margin: 20vh 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+span {
+    margin-bottom: 10vh;
+}
+
+span:before {
+    z-index: -2;
+    animation: beat-before 1.5s ease-out 200ms infinite;
+}
+    
+span:after {
+    z-index: -1;
+    animation: beat-after 1.5s ease-out 400ms infinite;
 }
