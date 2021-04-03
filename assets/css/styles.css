@@ -43,6 +43,7 @@ h3,
 p,
 footer a {
     font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
 }
 
 h4,
@@ -198,7 +199,7 @@ main article:last-of-type h3 {
 
 main article:last-child p,
 main article:last-child a {
-    margin: 10vh 0vw 10vh 30vw ;
+    margin: 10vh 0vw 10vh 28vw ;
 }
 
 main article:last-child p {
@@ -226,6 +227,7 @@ footer {
     text-align: center;
     background: transparent;
     border: none;
+    padding-bottom: 15vh ;
 }
 
 footer a {
@@ -240,16 +242,13 @@ footer a:hover {
     text-decoration: underline;
 }
 
-span {
-    margin-bottom: 10vh;
+footer p {
+    width: 100px;
+    margin: 0 auto;
+    animation: beat 1.5s ease 0s infinite;
 }
 
-span:before {
-    z-index: -2;
-    animation: beat-before 1.5s ease-out 200ms infinite;
-}
-    
-span:after {
-    z-index: -1;
-    animation: beat-after 1.5s ease-out 400ms infinite;
+@keyframes beat {
+    0% { transform: scale(1);}
+    50% { transform: scale(2.1);}
 }
