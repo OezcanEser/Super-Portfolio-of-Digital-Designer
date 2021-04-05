@@ -34,8 +34,8 @@ main article:last-child a {
     font-family: 'Work Sans', sans-serif;
 }
 
-article p:nth-of-type(2), a
- {
+article p:nth-of-type(2),
+a {
     font-family: 'Fjalla One', sans-serif;
 }
 
