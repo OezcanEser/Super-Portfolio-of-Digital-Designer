@@ -168,7 +168,7 @@ main a:hover + ::after {
 
 main article:last-child {
     background: #000;
-    padding: 10vh;
+    padding: 10vh 10vw;
 }
 
 main article:last-child h3 {
